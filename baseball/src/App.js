@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Display from './components/Display';
-import Controls from './components/Dashboard';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [strikes, setStrikes] = useState(0);
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Display strikes={strikes} balls={balls} />
-      <Controls strike={scoreStrike}
+      <Dashboard strike={scoreStrike}
                 ball={scoreBall}
                 foul={scoreFoul}
                 hit={scoreHit}
